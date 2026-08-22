@@ -4,7 +4,7 @@
 
 ## 本機檢視
 
-直接以瀏覽器開啟 `index.html` 即可預覽。正式發布前，請將 `index.html` 中的 `APPS_SCRIPT_URL` 替換為新接單 Apps Script Web App URL；placeholder 存在時，表單會明確顯示「接單系統準備中」並拒絕送出。
+直接以瀏覽器開啟 `index.html` 即可預覽。網站已連接新接單 Apps Script Web App。
 
 ## 素材
 
@@ -13,9 +13,9 @@
 - `night-rally-front.jpg`、`night-rally-back.jpg`
 - `first-light-front.jpg`、`first-light-back.png`
 
-## 部署前檢查
+## 已完成的接單設定
 
-1. 確認 Apps Script 寫入新 Sheet 的 `R:S` 欄位，且舊 `F:I` 保持空白。
-2. 將 Sheet 與 Apps Script 時區設為 `Asia/Taipei`。
-3. 以手機與桌面完成兩款、多尺寸、運費、驗證與重送測試。
-4. 確認 Google Sheet 未公開含個資的訂單分頁。
+1. Apps Script 已設定為新接單流程：新版圖樣資料寫入 `R:S`，舊 `F:I` 欄位保持空白。
+2. Google Sheet 與 Apps Script 時區均為 `Asia/Taipei`。
+3. 已完成桌面與手機的端到端檢查，涵蓋兩款版本、多尺寸、運費、表單驗證與防重送。
+4. 訂單個資分頁不公開；公開網站與版本庫不保存 Google Sheet 個資或敏感設定。
